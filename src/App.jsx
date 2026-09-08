@@ -131,7 +131,6 @@ export default function App() {
         <>
           <MemoryflixApp
             key={`memoryflix-${resetKey}`}
-            initialPhase="home"
             onRestartWholeSite={handleRestartWholeSite}
             onVideoStart={pauseAmbientMusic}
             onVideoEnd={resumeAmbientMusic}
