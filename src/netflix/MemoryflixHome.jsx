@@ -43,6 +43,7 @@ export default function MemoryflixHome({
   const [searchOpen, setSearchOpen] = useState(false);
   const [heroIndex, setHeroIndex] = useState(0);
   const heroImages = [data.hero.image, ...dumpPhotos, ...anniversaryPhotos.map((photo) => photo.thumbnail)];
+  const allMemories = [...data.memories, ...anniversaryPhotos];
 
   useEffect(() => {
     if (heroImages.length < 2) return undefined;
@@ -81,7 +82,7 @@ export default function MemoryflixHome({
       case "videos":
         return data.memories.filter((m) => m.type === "video");
       case "favorites":
-        return data.memories.filter((m) => myList.includes(m.id));
+        return allMemories.filter((m) => myList.includes(m.id));
       case "story":
         return data.memories.filter((m) => m.category === "Our Best Memories");
       case "memories":
@@ -89,7 +90,7 @@ export default function MemoryflixHome({
       default:
         return [];
     }
-  }, [activeFilter, data.memories, myList]);
+  }, [activeFilter, allMemories, data.memories, myList]);
 
   return (
     <div className="relative h-full w-full overflow-y-auto bg-[radial-gradient(circle_at_top,_rgba(229,9,20,0.28),_transparent_22%),_linear-gradient(180deg,_#0b0b0b_0%,_#0a0a0a_100%)]">
