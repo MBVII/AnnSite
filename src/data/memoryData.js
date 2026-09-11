@@ -182,11 +182,9 @@ export const siteData = {
     smallLine: "More memories coming soon…",
     letter: {
       title: "A Letter For You",
-      salutation: "My love,",
+      salutation: "My Deepu,",
       paragraphs: [
-        "Write your first paragraph here.",
-        "Write your second paragraph here.",
-        "Write your final paragraph here.",
+        "To start, I still don’t know what to write. I’ve been trying to think of something to say, technically speaking, for the past few days, but I just don’t know. I think, technically speaking, it won’t sound good, but yeah, I think I have zero things to say to you right now. Because I think you know everything...",
       ],
       signOff: "Forever yours,\nManan",
     },
