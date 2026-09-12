@@ -18,8 +18,8 @@ const anniversaryData = {
   // ── People & date ────────────────────────────────────────
   partnerName: "Diya",
   yourName: "Manan",
-  anniversaryDate: "12 June 2024",
-  yearsTogether: "2",
+  anniversaryDate: "12 September 2024",
+  yearsTogether: "1",
 
   // ── Page 1 — Opening ─────────────────────────────────────
   opening: {
@@ -59,7 +59,7 @@ const anniversaryData = {
         title: "First Meeting",
         caption: "Where it all started…",
         text: "I never expected to meet someone like you, and I was confused at the same time. I think it was chance, or maybe luck, that brought us together on a bus filled with what felt like a billion people, with you sitting right next to me. Even after my first rejection, you made me a better person by helping me realize that I was not completely happy with who I was. I was going through things that I had not understood before, and somehow, without even knowing it, I was beginning to love you.",
-        image: { src: "/photos/story-1.jpg", alt: "The place we first met" },
+        image: { src: "/photos/memory-3.jpg", alt: "The place we first met" },
       },
       {
         date: "21 February 2024",
